@@ -1,0 +1,33 @@
+.menu{
+	position: relative;
+}
+
+
+.menu.active .burger {
+	border: 2px solid transparent;
+}
+
+
+.menu.active .burger span {
+	background: transparent;
+	transition: .3s;
+
+}
+
+.menu.active .burger span::before{
+	 transform: rotate(45deg); 
+	top: 0; 
+	
+} 
+
+.menu.active .burger span::after {
+	transform: rotate(-45deg); 
+	top: 0; 
+}
+
+.menu.active nav {
+	padding: 50px 20px;
+	width: 380px;
+	height: 320px;
+	border-radius: 0px 0px 60px 60px;
+}

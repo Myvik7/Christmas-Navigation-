@@ -1,0 +1,132 @@
+nav {
+	background: white;
+	position: absolute;
+	top: 0;
+	left: 0;	
+	z-index: -1;
+	padding: 0px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	transition: 2s;	
+	border-bottom-right-radius: 90%;
+	background-image: url(/image/Santa.png);
+	background-repeat: no-repeat;
+	background-position: 65% 45%;	
+	background-size: 70px 70px;
+}
+
+	nav::after{
+	content: '';
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-image: url(/image/icons8-snowman-100.png);
+	background-size: 70px 70px;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 1px;
+	right: 5px;	
+	animation: snowman 9s infinite;
+	}
+
+@keyframes snowman {
+	0%{
+		bottom: 1px;
+		right: 5px;
+		transform: rotate(15deg);
+
+	}
+
+	50%{
+		bottom: 1px;
+		right: 300px;
+	}
+	100%{
+		bottom: 1px;
+		right: 5px;
+		transform: rotate(-15deg);
+
+	} 
+}
+
+
+nav::before{
+	content: '';
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-image: url(/image/ho.png);
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50px;
+	right: 100px;
+	animation: ho 4s infinite;		
+	}
+
+	@keyframes ho {
+		0%{
+			top: 50px;
+			right: 100px;
+		}
+	50%{	
+			top: 30px;
+			right: 140px;
+		}
+		100%{
+			top: 20px;
+			right: 140px;
+		}
+
+	}
+
+	.snow {
+		position: relative;
+		display: flex;
+		top: -10px;
+		left: 0px;
+		z-index: -1;
+		animation: snoww 29s infinite;
+		
+	}
+
+	@keyframes snoww {
+		0%{
+			top: -10px;
+			left: 0px;
+		}
+		25% {
+			top: -10px;
+			left: 100px;
+		}
+	50%{	
+			top: -30px;
+			left: 200px;
+		}
+		75%{	
+			top: -20px;
+			left: 280px;
+		}
+
+		100%{
+			top: -10px;
+			left: 0px;
+		}
+
+	}
+nav a {
+	display: flex;
+	position: relative;
+	top: 10px;
+	left: 5px;	
+	padding: 5px;
+	font-family: Cursive;
+	text-decoration: none;
+	color: blue;
+	font-weight: bold;
+	width: 90px;
+	height: 45px;
+}
+
+
